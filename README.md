@@ -10,4 +10,4 @@
 6. php artisan db:seed 
 7. php artisan serve
 
-The api can be accessed at [http://localhost:8000/api](http://localhost:8000/api).
+The api can be accessed at [/api/v1/](http://plexus-game-api.herokuapp.com/api/v1/).
