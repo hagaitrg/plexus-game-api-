@@ -20,6 +20,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function(){
+    Route::get('/', function(){
+        return response()->json([
+            "success" => true,
+            "code" => 200,
+            "message" => "Welcome to Plexu Game REST API V 1.0!" 
+        ]);
+    });
     Route::prefix('users')->group(function(){
         Route::post('register', [AuthController::class, 'register']);
         Route::post('login', [AuthController::class, 'login']);
